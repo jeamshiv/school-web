@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style type="text/css">
+
+    	.shivNavbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    z-index: 999;
+    animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+    -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+    -webkit-box-shadow: 0px 10px 20px 0px rgb(8 0 42 / 8%);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(8, 0, 42, 0.08);
+    box-shadow: 0px 10px 20px 0px rgb(8 0 42 / 8%);
+}
+
+
+    	.txt-2467EC{
+    		color: #2467EC;
+    	}
+    	.heading{
+    		    line-height: 1.2;
+			    margin-bottom: 20px;
+			    font-size: 50px
+    	}
+    	.section-title h2 {
+		    font-size: 36px;
+		    line-height: 1.3;
+		}
+    	h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+    color: #141517;
+    margin-top: 0px;
+    font-weight: 700;
+    line-height: 1.3;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+	}
+	p{
+		    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #575757;
+    margin-bottom: 15px;
+    line-height: 26px;
+	}
+	.edu-btn{
+		    display: inline-block;
+    height: 55px;
+    line-height: 53px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #2467EC;
+    padding: 0 40px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    border: 1px solid transparent;
+	}
+	.edu-btn:hover {
+    background-color: #FFB013;
+    color: #141517;
+}
+
+.edu-sec-btn {
+    display: inline-block;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2467EC;
+    background-color: transparent;
+    padding: 0 30px;
+    border: 1px solid #dce8fe;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+.edu-sec-btn:hover {
+    background-color: #2467EC;
+    color: #ffffff;
+    border-color: #2467EC;
+}
+
+	.nav-link{
+		color: #141517 !important;
+    	font-weight: 600;
+	}
+	.nav-link:hover{
+		color: #2467EC !important;
+	}
+
+
+
+	.catagory-wrapper {
+    background: transparent;
+    align-items: center;
+    border: 1px solid #edeef2;
+    border-radius: 5px;
+    padding: 20px 30px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+.catagory-wrapper:hover {
+    background-color: #2467EC;
+    box-shadow: 0px 40px 40px rgb(24 44 74 / 10%);
+    border-color: #2467EC;
+}
+.catagory-wrapper .catagory-thumb {
+    margin-right: 22px;
+}
+.catagory-wrapper .catagory-content {
+    color: #141517;
+}
+.catagory-wrapper:hover .catagory-content, 
+.catagory-wrapper:hover .catagory-content h3 {
+    color: #ffffff;
+}
+
+.features-area {
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-141517 {
+  background: #141517;
+}
+
+
+
+
+    </style>
+  </head>
+  <body>
+    
+    
+
+  	<!-- This is navbar -->
+  	<nav class="navbar navbar-expand-lg navbar-light bg-light shivNavbar">
+  <a class="navbar-brand" href="#">SRUG-UP</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Online Tutor</a>
+      </li>
+      <li class="nav-item">
+      	<a class="nav-link" href="#">Schedule</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    <a class="nav-link mr-2" href="#">Sign In</a>
+    <button class="edu-btn">Sign Up</button>	
+  </div>
+</nav>
+  	<!-- navbar end -->
+
+
+
+  	<div class="container-fluid px-lg-5" style="background: url('https://themepure.net/html/eduman-prv/eduman/assets/img/slider/Image.jpg'); min-height: 90vh; padding-top: 150px;">
+  		<div class="row align-items-center">
+  			<div class="col-xl-6 col-lg-6">
+  				<div class="px-4">
+  					<h5 class="txt-2467EC">Discover your journey</h5>
+  					<h1 class="heading">Discover 4500+ Courses from top Instructors Around the World</h1>
+  					<p>Take your learning organization to the next level. to the next level. Who'll share their knowledge to people around the world.</p>
+  					<div>
+  						<button class="edu-btn">View all course</button>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="col-xl-6 col-lg-6" style="min-height: 70vh;">
+  				
+  			</div>
+  			
+  		</div>
+  	</div>
+
+
+  	<!-- explore our top cat -->
+  	<div class="text-center my-5 section-title">
+  		<h2>Explore <br />Our Top Categories</h2>
+  	</div>
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-lg-4 col-xl-4">
+  				<div class="catagory-wrapper d-flex mb-4">
+  					<div class="category-thumb">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45.01" viewBox="0 0 45 45.01">
+                              <g id="code" transform="translate(-0.061)">
+                                 <path id="Path_8754" data-name="Path 8754" d="M29.775,60.8a8.79,8.79,0,0,1-5.352-8.1V28.787A8.777,8.777,0,0,1,33.19,20H27.852a8.791,8.791,0,0,0-8.791,8.791V52.7a8.791,8.791,0,0,0,8.791,8.791h1.886C29.746,61.262,29.758,61.032,29.775,60.8Z" transform="translate(-17.33 -18.242)" fill="#c8d6f0"></path>
+                                 <path id="Path_8755" data-name="Path 8755" d="M11.753,45.01H10.61A10.561,10.561,0,0,1,.061,34.461V10.549A10.561,10.561,0,0,1,10.61,0H26.786A10.561,10.561,0,0,1,37.335,10.549V22.5a1.758,1.758,0,0,1-3.516,0V10.549a7.041,7.041,0,0,0-7.033-7.033H10.61a7.041,7.041,0,0,0-7.033,7.033V34.461a7.041,7.041,0,0,0,7.033,7.033h1.143A1.758,1.758,0,0,1,11.753,45.01ZM30.214,16.175a1.758,1.758,0,0,0-1.758-1.758H25.467A2.64,2.64,0,0,1,22.83,11.78V8.791a1.758,1.758,0,0,0-3.516,0V11.78a6.161,6.161,0,0,0,6.154,6.154h2.989A1.758,1.758,0,0,0,30.214,16.175Z" transform="translate(0)" fill="#2467ec"></path>
+                                 <path id="Path_8756" data-name="Path 8756" d="M181.9,329.576a1.758,1.758,0,0,1-1.233-3.011l4.592-4.519a1.747,1.747,0,0,0,0-2.462l-4.6-4.586a1.758,1.758,0,1,1,2.483-2.489l4.6,4.586a5.28,5.28,0,0,1,0,7.446l-.008.008-4.6,4.524A1.753,1.753,0,0,1,181.9,329.576Zm-15.1-.525a1.758,1.758,0,0,0-.02-2.486l-4.592-4.519a1.747,1.747,0,0,1,0-2.463l4.6-4.586a1.758,1.758,0,1,0-2.483-2.489l-4.6,4.585a5.28,5.28,0,0,0,0,7.446l.008.008,4.6,4.524a1.758,1.758,0,0,0,2.486-.02Zm6.59-.747,4.044-14.066a1.758,1.758,0,0,0-3.38-.972l-4.044,14.066a1.758,1.758,0,1,0,3.38.972Z" transform="translate(-144.217 -284.566)" fill="#ffb013"></path>
+                              </g>
+                           </svg>
+  					</div>
+  					<div class="catagory-content">
+                       <h3>Development</h3>
+                       <span>Take your journey with this course</span>
+                    </div>
+  				
+          </div>
+  			</div>
+
+
+        <!-- second card -->
+        <div class="col-lg-4 col-xl-4">
+          <div class="catagory-wrapper d-flex mb-4">
+            <div class="category-thumb">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45.01" viewBox="0 0 45 45.01">
+                              <g id="code" transform="translate(-0.061)">
+                                 <path id="Path_8754" data-name="Path 8754" d="M29.775,60.8a8.79,8.79,0,0,1-5.352-8.1V28.787A8.777,8.777,0,0,1,33.19,20H27.852a8.791,8.791,0,0,0-8.791,8.791V52.7a8.791,8.791,0,0,0,8.791,8.791h1.886C29.746,61.262,29.758,61.032,29.775,60.8Z" transform="translate(-17.33 -18.242)" fill="#c8d6f0"></path>
+                                 <path id="Path_8755" data-name="Path 8755" d="M11.753,45.01H10.61A10.561,10.561,0,0,1,.061,34.461V10.549A10.561,10.561,0,0,1,10.61,0H26.786A10.561,10.561,0,0,1,37.335,10.549V22.5a1.758,1.758,0,0,1-3.516,0V10.549a7.041,7.041,0,0,0-7.033-7.033H10.61a7.041,7.041,0,0,0-7.033,7.033V34.461a7.041,7.041,0,0,0,7.033,7.033h1.143A1.758,1.758,0,0,1,11.753,45.01ZM30.214,16.175a1.758,1.758,0,0,0-1.758-1.758H25.467A2.64,2.64,0,0,1,22.83,11.78V8.791a1.758,1.758,0,0,0-3.516,0V11.78a6.161,6.161,0,0,0,6.154,6.154h2.989A1.758,1.758,0,0,0,30.214,16.175Z" transform="translate(0)" fill="#2467ec"></path>
+                                 <path id="Path_8756" data-name="Path 8756" d="M181.9,329.576a1.758,1.758,0,0,1-1.233-3.011l4.592-4.519a1.747,1.747,0,0,0,0-2.462l-4.6-4.586a1.758,1.758,0,1,1,2.483-2.489l4.6,4.586a5.28,5.28,0,0,1,0,7.446l-.008.008-4.6,4.524A1.753,1.753,0,0,1,181.9,329.576Zm-15.1-.525a1.758,1.758,0,0,0-.02-2.486l-4.592-4.519a1.747,1.747,0,0,1,0-2.463l4.6-4.586a1.758,1.758,0,1,0-2.483-2.489l-4.6,4.585a5.28,5.28,0,0,0,0,7.446l.008.008,4.6,4.524a1.758,1.758,0,0,0,2.486-.02Zm6.59-.747,4.044-14.066a1.758,1.758,0,0,0-3.38-.972l-4.044,14.066a1.758,1.758,0,1,0,3.38.972Z" transform="translate(-144.217 -284.566)" fill="#ffb013"></path>
+                              </g>
+                           </svg>
+            </div>
+            <div class="catagory-content">
+                       <h3>Development</h3>
+                       <span>Take your journey with this course</span>
+                    </div>
+          
+          </div>
+        </div>
+        <!-- second card end -->
+
+         <!-- third card -->
+        <div class="col-lg-4 col-xl-4">
+          <div class="catagory-wrapper d-flex mb-4">
+            <div class="category-thumb">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45.01" viewBox="0 0 45 45.01">
+                              <g id="code" transform="translate(-0.061)">
+                                 <path id="Path_8754" data-name="Path 8754" d="M29.775,60.8a8.79,8.79,0,0,1-5.352-8.1V28.787A8.777,8.777,0,0,1,33.19,20H27.852a8.791,8.791,0,0,0-8.791,8.791V52.7a8.791,8.791,0,0,0,8.791,8.791h1.886C29.746,61.262,29.758,61.032,29.775,60.8Z" transform="translate(-17.33 -18.242)" fill="#c8d6f0"></path>
+                                 <path id="Path_8755" data-name="Path 8755" d="M11.753,45.01H10.61A10.561,10.561,0,0,1,.061,34.461V10.549A10.561,10.561,0,0,1,10.61,0H26.786A10.561,10.561,0,0,1,37.335,10.549V22.5a1.758,1.758,0,0,1-3.516,0V10.549a7.041,7.041,0,0,0-7.033-7.033H10.61a7.041,7.041,0,0,0-7.033,7.033V34.461a7.041,7.041,0,0,0,7.033,7.033h1.143A1.758,1.758,0,0,1,11.753,45.01ZM30.214,16.175a1.758,1.758,0,0,0-1.758-1.758H25.467A2.64,2.64,0,0,1,22.83,11.78V8.791a1.758,1.758,0,0,0-3.516,0V11.78a6.161,6.161,0,0,0,6.154,6.154h2.989A1.758,1.758,0,0,0,30.214,16.175Z" transform="translate(0)" fill="#2467ec"></path>
+                                 <path id="Path_8756" data-name="Path 8756" d="M181.9,329.576a1.758,1.758,0,0,1-1.233-3.011l4.592-4.519a1.747,1.747,0,0,0,0-2.462l-4.6-4.586a1.758,1.758,0,1,1,2.483-2.489l4.6,4.586a5.28,5.28,0,0,1,0,7.446l-.008.008-4.6,4.524A1.753,1.753,0,0,1,181.9,329.576Zm-15.1-.525a1.758,1.758,0,0,0-.02-2.486l-4.592-4.519a1.747,1.747,0,0,1,0-2.463l4.6-4.586a1.758,1.758,0,1,0-2.483-2.489l-4.6,4.585a5.28,5.28,0,0,0,0,7.446l.008.008,4.6,4.524a1.758,1.758,0,0,0,2.486-.02Zm6.59-.747,4.044-14.066a1.758,1.758,0,0,0-3.38-.972l-4.044,14.066a1.758,1.758,0,1,0,3.38.972Z" transform="translate(-144.217 -284.566)" fill="#ffb013"></path>
+                              </g>
+                           </svg>
+            </div>
+            <div class="catagory-content">
+                       <h3>Development</h3>
+                       <span>Take your journey with this course</span>
+                    </div>
+          
+          </div>
+        </div>
+        <!-- third card end -->
+
+
+  		</div>
+  	</div>
+
+
+
+    <div class="container-fluid features-area py-4 mt-5" data-background="https://themepure.net/html/eduman-prv/eduman/assets/img/fact/fact.png" style="background-image: url('https://themepure.net/html/eduman-prv/eduman/assets/img/fact/fact.png');">
+      <div class="container">
+            <div class="row">
+               <div class="col-xl-4 col-lg-4 col-md-6">
+                  <div class="features-wrapper d-flex align-items-center mb-4">
+                     <div class="features-content">
+                        <h3 class="text-light">Learn with skills
+                           over 2,420 courses</h3>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-6">
+                  <div class="features-wrapper d-flex align-items-center mb-4">
+                     <div class="features-content">
+                        <h3 class="text-light">Earn certificates
+                           and degrees</h3>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-6">
+                  <div class="features-wrapper d-flex align-items-center mb-4">
+                     <div class="features-content">
+                        <h3 class="text-light">Learn from
+                           anywhere, any time</h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+    </div>
+
+
+    <!-- why choose -->
+    <div class="container mt-5 pt-5">
+            <div class="row">
+        <div class="col-xl-6 col-lg-6">
+          <div class="px-4">
+            <h1 class="heading">Why Students Choose Us for Gain Their Knowledge</h1>
+            <p class="mb-4">Helping employees gain skills and providing career development often take a back seat to business priorities but workplace better right now. Seventy percent of workers think that.</p>
+            <ul class="list-unstyled mb-5">
+              <li>Free for physically handcraft</li>
+              <li>Easy to enroll courses</li>
+              <li>Course certificate for particular course</li>
+            </ul>
+            <div>
+              <button class="edu-sec-btn">More about us</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+          <div>
+            <img class="img-fluid" src="https://themepure.net/html/eduman-prv/eduman/assets/img/student-choose/student.png">
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- why choose end -->
+
+    <footer class="bg-141517 mt-5 py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            <img class="img-fluid" src="https://themepure.net/html/eduman-prv/eduman/assets/img/logo/footer-logo.png">
+            <p class="text-light">Great lesson ideas and lesson plans for ESL teachers! Educators can customize lessons as best plans to knowledge.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/251c1ad996.js"></script>
+  </body>
+</html>
+
